@@ -2,8 +2,6 @@
 
 [https://www.commentpotato.com](https://www.commentpotato.com/)
 
-![client](../preview.jpg?raw=true)
-
 ## Prerequisites
 
 Before you run the project you have to create .env file to the project root directory. Add the following lines to the file:
