@@ -1,6 +1,6 @@
 # Commentpotato
 
-CommentPotato is a tool that allows you to automatically fetch random YouTube videos and the most liked comment on a video.
+CommentPotato is a tool that allows you to automatically fetch random YouTube videos and the most liked comment on a video. It can also create images based on fetched data, post these images to Twitter, create automatically YouTube videos and so on.
 
 ![client](preview.jpg?raw=true)
 
