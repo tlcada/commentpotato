@@ -4,7 +4,7 @@ CommentPotato is a tool that allows you to automatically fetch random YouTube vi
 
 ![client](preview.jpg?raw=true)
 
-See what Commentpotato can create:
+See what content Commentpotato can create:
 
 * [Home page](https://www.commentpotato.com/)
 * [Instagram](https://www.instagram.com/commentpotato/)
