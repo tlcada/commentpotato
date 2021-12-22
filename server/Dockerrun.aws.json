@@ -1,0 +1,13 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "12345.dkr.ecr.eu-north-1.amazonaws.com/commentpotato_server:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}

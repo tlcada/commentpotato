@@ -1,0 +1,22 @@
+<script>
+
+var words = ["word1", "word2"];
+var wordsSize = words.length - 1;
+var wordMinLength = 3;
+
+document.write("[");
+for (var i = 0; i <= wordsSize; i++) {
+	var word = words[i];
+
+	if (word.length > wordMinLength) {
+		document.write("\"");
+		document.write(words[i]);
+		document.write("\"");
+		if (i < wordsSize) {
+			document.write(",");
+		}
+	}
+}
+document.write("]");
+
+</script>

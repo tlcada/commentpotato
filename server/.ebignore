@@ -1,0 +1,6 @@
+# Ignore everything
+*
+
+# Allow files and directories
+!Dockerrun.aws.json
+!.ebextensions/*

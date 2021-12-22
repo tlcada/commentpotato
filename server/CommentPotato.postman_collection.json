@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "d1b1cc98-f182-4b29-af46-ef97c3ec84cc",
+		"name": "CommentPotato",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "YouTubeAPI",
+			"item": [
+				{
+					"name": "Search YouTube videos by query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=50&order=viewCount&relevanceLanguage=en&key={{youtube_api_key}}&safeSearch=strict&videoDefinition=high&regionCode=fi&q=muselk",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"youtube",
+								"v3",
+								"search"
+							],
+							"query": [
+								{
+									"key": "part",
+									"value": "snippet"
+								},
+								{
+									"key": "type",
+									"value": "video"
+								},
+								{
+									"key": "maxResults",
+									"value": "50"
+								},
+								{
+									"key": "order",
+									"value": "viewCount"
+								},
+								{
+									"key": "relevanceLanguage",
+									"value": "en"
+								},
+								{
+									"key": "key",
+									"value": "{{youtube_api_key}}"
+								},
+								{
+									"key": "safeSearch",
+									"value": "strict"
+								},
+								{
+									"key": "videoDefinition",
+									"value": "high"
+								},
+								{
+									"key": "regionCode",
+									"value": "fi"
+								},
+								{
+									"key": "q",
+									"value": "muselk"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Most pupular YouTube video query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.googleapis.com/youtube/v3/videos?part=localizations&key={{youtube_api_key}}&regionCode=us&chart=mostPopular&maxResults=50",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"youtube",
+								"v3",
+								"videos"
+							],
+							"query": [
+								{
+									"key": "part",
+									"value": "localizations"
+								},
+								{
+									"key": "key",
+									"value": "{{youtube_api_key}}"
+								},
+								{
+									"key": "regionCode",
+									"value": "us"
+								},
+								{
+									"key": "chart",
+									"value": "mostPopular"
+								},
+								{
+									"key": "maxResults",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get YouTube video statistics by video id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.googleapis.com/youtube/v3/videos?part=statistics&key={{youtube_api_key}}&regionCode=fi&id=KhcQl2y0n4A",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"youtube",
+								"v3",
+								"videos"
+							],
+							"query": [
+								{
+									"key": "part",
+									"value": "statistics"
+								},
+								{
+									"key": "key",
+									"value": "{{youtube_api_key}}"
+								},
+								{
+									"key": "regionCode",
+									"value": "fi"
+								},
+								{
+									"key": "id",
+									"value": "KhcQl2y0n4A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get YouTube video snippets by video id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.googleapis.com/youtube/v3/videos?part=snippet&key={{youtube_api_key}}&regionCode=fi&id=sdQBuFLtjZo",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"youtube",
+								"v3",
+								"videos"
+							],
+							"query": [
+								{
+									"key": "part",
+									"value": "snippet"
+								},
+								{
+									"key": "key",
+									"value": "{{youtube_api_key}}"
+								},
+								{
+									"key": "regionCode",
+									"value": "fi"
+								},
+								{
+									"key": "id",
+									"value": "sdQBuFLtjZo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get YouTube video comments by video id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&key={{youtube_api_key}}&videoId=LcYXByv75nY&maxResults=2&order=relevance&textFormat=html",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"youtube",
+								"v3",
+								"commentThreads"
+							],
+							"query": [
+								{
+									"key": "part",
+									"value": "snippet"
+								},
+								{
+									"key": "key",
+									"value": "{{youtube_api_key}}"
+								},
+								{
+									"key": "videoId",
+									"value": "LcYXByv75nY"
+								},
+								{
+									"key": "maxResults",
+									"value": "2"
+								},
+								{
+									"key": "order",
+									"value": "relevance"
+								},
+								{
+									"key": "textFormat",
+									"value": "html"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Commentpotato",
+			"item": [
+				{
+					"name": "Download csv history by app name",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/csv_history/instagram",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"csv_history",
+								"instagram"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download webpage JSON data",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTU4MTg1NjQ1MX0.6chz9zCwm3PmiHcAerToTSHdclmdSofB1yXKXWH_y8E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/webpage_data",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"webpage_data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get access token /auth",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download Instagram weekly data",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ig",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ig"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download Instagram single data",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/ig?video=3J6o7hcm8bE",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ig"
+							],
+							"query": [
+								{
+									"key": "video",
+									"value": "3J6o7hcm8bE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download YouTube video with episode number",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/video?episode=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"video"
+							],
+							"query": [
+								{
+									"key": "episode",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download video files from the folder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/ig/video/download",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ig",
+								"video",
+								"download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get logs by date /logs/<date>",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/logs/2020-04-26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"logs",
+								"2020-04-26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tweet automatically",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/twitter?postTweet=true",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"twitter"
+							],
+							"query": [
+								{
+									"key": "postTweet",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Other",
+			"item": [
+				{
+					"name": "Detect language",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{detectlanguage_api_key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"q\": \"good tutorials for babies.   they can learn from her. and do by their own\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ws.detectlanguage.com/0.2/detect",
+							"protocol": "https",
+							"host": [
+								"ws",
+								"detectlanguage",
+								"com"
+							],
+							"path": [
+								"0.2",
+								"detect"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+  "general": {
+    "nickname": "Commentpotato",
+    "slogan": "Potatoes everywhere, but not here"
+  },
+  "header": {
+    "description": "Random YouTube videos and their best comment.",
+    "newVideo": "- New videos every day -",
+    "readMore": "Read more",
+    "socialMedia": {
+      "twitter": {
+        "title": "Follow me on Twitter",
+        "link": "https://twitter.com/commentpotato"
+      },
+      "instagram": {
+        "title": "Follow me on Instagram",
+        "link": "https://www.instagram.com/commentpotato/"
+      },
+      "youtube": {
+        "title": "Follow me on YouTube",
+        "link": "https://www.youtube.com/channel/UCXmQk4PYoq5v9jIvmRgfXYg"
+      },
+      "facebook": {
+        "title": "Follow me on Facebook",
+        "link": "https://fb.me/commentpotato"
+      }
+    },
+    "switchButton": {
+      "videoOn": "Video on",
+      "videoOff": "Video off"
+    }
+  },
+  "videoList": {
+    "viewFullComment": "Read full comment",
+    "hideFullComment": "Hide full comment",
+    "downloading": "Loading search results...",
+    "error": {
+      "ohNo": "Oh no! Something has gone wrong.",
+      "tryAgain": "Please try again."
+    }
+  },
+  "footer": {
+    "description": "{{nickname}} brings you random videos and their most liked comment from YouTube! All videos are retrieved by powerful algorithms (not really, but it sounded good...). If you love YouTube comments as much as we do, you'll find more comments and videos on our Instagram and Twitter accounts.",
+    "copyright": "Copyright {{year}} - {{nickname}}. All Rights Reserved.",
+    "technicalDetails": "Technical details"
+  },
+  "cookieBanner": {
+    "button": "Ok",
+    "text": "This website uses cookies to enhance the user experience."
+  },
+  "stack": {
+    "title": "Stack",
+    "subTitle": "Main technologies used in the project including servers, Front and Back end.",
+    "backText": "Go to the Front page"
+  }
+}

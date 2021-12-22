@@ -1,0 +1,54 @@
+FROM node:12.16.3
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+
+# Set ENV variables from --build-arg params
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+
+ENV TZ="Europe/Helsinki"
+ENV NODE_ENV="production"
+
+ENV BASIC_AUTH_USERNAME="root"
+ENV BASIC_AUTH_PASSWORD="12345"
+
+ENV IG_BASIC_AUTH_USERNAME="root"
+ENV IG_BASIC_AUTH_PASSWORD="12345"
+
+ENV YOUTUBE_API_KEY="12345"
+
+ENV LANGUAGE_DETECTION_API_KEY="12345"
+
+ENV JWT_SECRET="0nTq1qD2TySiwnUMNBLsykxMbfqTIhbB"
+
+ENV TWITTER_API_KEY="12345"
+ENV TWITTER_API_SECRET="12345"
+ENV TWITTER_ACCESS_TOKEN="12345"
+ENV TWITTER_ACCESS_TOKEN_SECRET=""12345
+
+ENV AWS_ACCESS_KEY_ID="12345"
+ENV AWS_SECRET_ACCESS_KEY="12345"
+
+# Install node modules
+RUN npm install --silent
+
+# Run tests
+RUN npm run test
+
+# These files are created with the test and must be deleted
+RUN rm -rf /usr/src/app/csv_files
+RUN rm -rf /usr/src/app/json_files
+RUN rm -rf /usr/src/app/instagram_weekly_file
+RUN rm -rf /usr/src/app/instagram_single_file
+RUN rm -rf /usr/src/app/youtube_video
+RUN rm -rf /usr/src/app/twitter_image
+
+# Create .build folder
+RUN npm run build
+
+# Change the timezone
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+EXPOSE 3000
+CMD [ "node", "./build/server.js" ]

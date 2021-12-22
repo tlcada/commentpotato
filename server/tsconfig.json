@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true, // Without this you can not copy .json files
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "outDir": "build",
+    "baseUrl": ".",
+    "preserveConstEnums": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

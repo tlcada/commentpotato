@@ -1,0 +1,15 @@
+{
+  "error": {
+    "errors": [
+      {
+        "domain": "youtube.commentThread",
+        "reason": "commentsDisabled",
+        "message": "The video identified by the <code><a href=\"/youtube/v3/docs/commentThreads/list#videoId\">videoId</a></code> parameter has disabled comments.",
+        "locationType": "parameter",
+        "location": "videoId"
+      }
+    ],
+    "code": 403,
+    "message": "The video identified by the <code><a href=\"/youtube/v3/docs/commentThreads/list#videoId\">videoId</a></code> parameter has disabled comments."
+  }
+}

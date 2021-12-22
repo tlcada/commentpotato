@@ -1,0 +1,10 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!package.json
+!package-lock.json
+!public/
+!src/
+!.dockerextensions/
+!tsconfig.json

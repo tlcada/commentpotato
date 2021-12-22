@@ -1,0 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Misc
+.DS_Store
+.env.*
+.env.*.*
+.env
+specs.txt
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.tar
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Vercel
+.now

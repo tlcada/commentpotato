@@ -1,0 +1,32 @@
+# IDE files
+.idea
+
+# Logs
+logs/*.log
+logs/*.json
+
+# App specific
+build
+specs.txt
+.env
+*.tar
+src/builder/__tests__/*.png
+csv_files/
+instagram_single_file/
+instagram_weekly_file/
+youtube_video/
+Dockerfile
+twitter_image/
+canvas_test_images/
+
+# Coverage directory used by tools like istanbul
+.nyc_output
+coverage
+
+# Dependency directory
+node_modules
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

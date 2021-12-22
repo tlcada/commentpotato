@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "REACT_APP_GA_CODE": "@react_app_ga_code"
+    }
+  }
+}
