@@ -14,8 +14,6 @@ These instructions will help you to run the project on your local machine for de
 
 ### Prerequisites
 
-**Note!** The project may not work in production mode if the REST APIs have changed.
-
 Before you can run the project on localhost you have to create .env file to the project root directory. Add the following lines to the file:
 
 * BASIC_AUTH_USERNAME=root

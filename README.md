@@ -14,5 +14,6 @@ See what content Commentpotato can create:
 
 This project consists of a client side and server side. Read README.md from their own folders. 
 
-[Project Stack](https://www.commentpotato.com/stack). Main technologies used in the project, including AWS, client side and the server side.
+[Main technologies](https://www.commentpotato.com/stack) used in the project, including AWS, client side and the server side.
 
+**Note!** The project may not work in production mode if the REST APIs have changed. The project was originally completed in 2020. 
